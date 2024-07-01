@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+/* Filter */
+.white-filter {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(25%) hue-rotate(70deg) brightness(108%) contrast(108%);
+}
+
+.blue-filter {
+    filter: brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(940%) hue-rotate(185deg) brightness(94%) contrast(100%);
+}
+
+.dark-gray {
+    filter: brightness(0) saturate(100%) invert(18%) sepia(16%) saturate(298%) hue-rotate(169deg) brightness(90%) contrast(91%);
+}
+
+/* filters */
+.green {
+    color: var(--Success-color);
+}
+
+/* red button */
+.Rejection {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(99%) saturate(4253%) hue-rotate(349deg) brightness(93%) contrast(98%);
+}
+
+.Rejection_bg {
+    background-color: color-mix(in srgb, var(--Red-color) 10%, transparent);
+}
+
+/* yellow button */
+.Unprocessed {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(83%) saturate(1040%) hue-rotate(2deg) brightness(103%) contrast(103%);
+}
+
+.Unprocessed_bg {
+    background-color: color-mix(in srgb, var(--Yellow-color) 10%, transparent);
+}
+
+/* green button */
+.Hired {
+    filter: brightness(0) saturate(100%) invert(39%) sepia(94%) saturate(1376%) hue-rotate(101deg) brightness(97%) contrast(105%);
+}
+
+.Hired_bg {
+    background-color: color-mix(in srgb, var(--Success-color) 10%, transparent);
+}
+
+/* gray button */
+.NotReached {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(24%) saturate(244%) hue-rotate(174deg) brightness(94%) contrast(93%);
+}
+
+.NotReached_bg {
+    background-color: color-mix(in srgb, var(--Gray-color) 10%, transparent);
+}
+
+/* pink button */
+.Interview {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(33%) saturate(4754%) hue-rotate(309deg) brightness(94%) contrast(90%);
+}
+
+.Interview_bg {
+    background-color: color-mix(in srgb, var(--Pink-color) 10%, transparent);
+}
+
+/* LightSeaGreen button */
+.CVRequest {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(67%) saturate(5622%) hue-rotate(157deg) brightness(99%) contrast(101%);
+}
+
+.CVRequest_bg {
+    background-color: color-mix(in srgb, var(--Action-color) 10%, transparent);
+}
+
+/* orange button */
+.InContact {
+    filter: brightness(0) saturate(100%) invert(70%) sepia(77%) saturate(5846%) hue-rotate(360deg) brightness(102%) contrast(105%);
+}
+
+.InContact_bg {
+    background-color: color-mix(in srgb, var(--Orange-color) 10%, transparent);
+}
+
+/* black */
+.black {
+    filter: brightness(0) saturate(100%) invert(19%) sepia(20%) saturate(232%) hue-rotate(169deg) brightness(91%) contrast(93%);
+}
+
+/* gray */
+.gray {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(9%) saturate(888%) hue-rotate(186deg) brightness(101%) contrast(84%);
+}

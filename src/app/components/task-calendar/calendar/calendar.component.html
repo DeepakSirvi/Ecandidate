@@ -1,0 +1,518 @@
+<!-- Calendar details -->
+<div class=" white_card_background p-4">
+    <div class="d-flex flex-column gap-4">
+        <!-- calendar tabs -->
+        <div class="calendar_task">
+            <!--  top  content -->
+            <div class="d-flex align-items-center gap-3">
+                <h2 class="card_heading Sub-Heading Medium mb-0">March</h2>
+                <img src="assets/images/svg-img/calender.svg">
+                <div class="action_light_btn small-text Medium py-1 px-2" data-bs-toggle="modal" href="#add"
+                    role="button">
+                    + Add
+                </div>
+            </div>
+            <div class=" gap-3 p-0 calendar_details">
+                <select class="calendar_dropdown px-2 py-1 medium-text Medium">
+                    <option value="-1">Week</option>
+                    <option value="-2">Month</option>
+                    <option value="1">Day</option>
+                </select>
+                <div class="d-flex align-items-center gap-1">
+                    <a href="#"><img src="assets/images/svg-img/left-arrow.svg"></a>
+                    <h2 class="small-text Medium mb-0 daily_status">Today</h2>
+                    <a href="#"><img src="assets/images/svg-img/arrow.svg"></a>
+                </div>
+                <div class="selectSection d-flex gap-3">
+                    <button type="button" data-number="1" class="primary_outline_btn medium-text Medium px-4  active">
+                        Calendar
+                    </button>
+                    <button type="button" data-number="2" class="primary_outline_btn  medium-text Medium px-4 ">
+                        Task & Event
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- calendar highlights event ui -->
+        <div class="d-flex calendar gap-2">
+            <a class="primary_card_background px-2 py-1 Caption Medium" data-bs-toggle="modal" href="#event"
+                role="button">Any event</a>
+            <a class="action_card_background px-2 py-1 Caption Medium" data-bs-toggle="modal" href="#task"
+                role="button">Task Design figma ui</a>
+        </div>
+        <!-- CALENDAR img-->
+        <div>
+            <img src="assets/images/png-img/task&calendar.png" class="w-100">
+        </div>
+    </div>
+</div>
+
+
+<!-- MODALS -->
+
+<!-- Add Task/Event calendar modal -->
+<div class="modal fade" id="add" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog large_modal modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-4  modal_details d-flex flex-column gap-4">
+                <div class="single_tab">
+                    <ul class="nav d-flex gap-4" id="pills-tab" role="tablist">
+                        <!-- Add Task -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active p-1 Sub-Heading" id="pills-AddTask-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-AddTask" type="button" role="tab" aria-controls="pills-AddTask"
+                                aria-selected="true">Add Task</button>
+                        </li>
+                        <!-- Add Event  -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link p-1 Sub-Heading" id="pills-AddEvent-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-AddEvent" type="button" role="tab" aria-controls="pills-AddEvent"
+                                aria-selected="false" tabindex="-1">Add Event
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- tabs start -->
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-- Add Task tabs -->
+                    <div class="tab-pane fade show active" id="pills-AddTask" role="tabpanel"
+                        aria-labelledby="pills-AddTask-tab" tabindex="0">
+                        <div class="d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-3 add_task">
+                                <!-- title -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Title</h3>
+                                    <input type="text" placeholder="Field Name "
+                                        class="search_input_field small-text p-2">
+                                </div>
+                                <!-- Assignee select -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Assignee</h3>
+                                    <select class=" search_input_field" aria-label="Default select example">
+                                        <option selected>Rashmi Rajput</option>
+                                        <option value="1">Mohit</option>
+                                        <option value="2">Yogesh</option>
+                                        <option value="3">Rashmi</option>
+                                    </select>
+                                </div>
+
+                                <!-- Description -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Description</h3>
+                                    <textarea placeholder="Description"
+                                        class="search_input_field small-text p-2"></textarea>
+                                </div>
+                                <!-- checkbox -->
+                                <div class="d-flex modal_heading">
+                                    <h3 class="mb-0">All day</h3>
+                                    <div class="d-flex gap-2 position-relative  check_box_field">
+                                        <label class="modal_checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmarks"></span>
+                                        </label>
+                                        <h1 class="Caption Medium mb-0"> 25-12-2024 <span>(Friday)
+                                            </span></h1>
+                                    </div>
+                                </div>
+                                <!-- start date time -->
+                                <div class="d-flex  gap-4">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start date</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                </div>
+                                <div class="d-flex  gap-4">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">End time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- buttons -->
+                            <div class="d-flex gap-4 justify-content-end">
+                                <button class="secondary_outline_btn medium-text Medium w-25 px-0"
+                                    data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                                <button class="primary_btn medium-text Medium w-25 px-0">Done</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Event  tabs -->
+                    <div class="tab-pane fade" id="pills-AddEvent" role="tabpanel" aria-labelledby="pills-AddEvent-tab"
+                        tabindex="0">
+                        <div class="d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-3 add_task">
+                                <!-- title -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Title</h3>
+                                    <input type="text" placeholder="Field Name "
+                                        class="search_input_field small-text p-2">
+                                </div>
+                                <!-- start date time -->
+                                <div class="d-flex  gap-4">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start date</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                </div>
+                                <div class="d-flex  gap-4">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">End time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                </div>
+                                <!-- checkbox -->
+                                <div class="d-flex modal_heading">
+                                    <h3 class="mb-0">All day</h3>
+                                    <div class="d-flex gap-2 position-relative check_box_field">
+                                        <label class="modal_checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmarks"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- goole meet -->
+                                <div class="d-flex justify-content-between">
+                                    <div class="googlemeet d-flex justify-content-start">
+                                        <img src="assets/images/svg-img/google_meet_icon1.svg" height="42">
+                                    </div>
+                                    <div class="google_meet_clipboard">
+                                        <button id="meet-button" class="meet-button small-text Medium"
+                                            onclick="showLoading()">Add Google
+                                            Meet video conferencing</button>
+                                        <!-- loading-spinner -->
+                                        <div id="loading-spinner" class="loading-spinner" style="display: none;">
+                                        </div>
+                                        <!-- after loading add link -->
+                                        <div id="after-loading" class="after-loading" style="display: none;">
+                                            <button id="join-button"
+                                                class="meet_btn small-text Medium">meet.google.com/ipr-tnkp-kyvUp to
+                                                100 guest connections</button>
+                                            <!-- action buttons -->
+                                            <div>
+                                                <!-- copy button -->
+                                                <button id="copy-link-button" class="meet_btn" onclick="copyLink()"><img
+                                                        src="assets/images/svg-img/clipboard.svg" height="20"></button>
+                                                <!-- close button -->
+                                                <button id="close-button" class="meet_btn" onclick="closeActions()"><img
+                                                        src="assets/images/svg-img/close.svg" height="20"
+                                                        class="gray"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Assignee select -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Assignee</h3>
+                                    <select class=" search_input_field" aria-label="Default select example">
+                                        <option selected>Rashmi Rajput</option>
+                                        <option value="1">Mohit</option>
+                                        <option value="2">Yogesh</option>
+                                        <option value="3">Rashmi</option>
+                                    </select>
+                                </div>
+                                <!-- Location -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Location</h3>
+                                    <input type="text" placeholder="Location" class="search_input_field small-text p-2">
+                                </div>
+                                <!-- Address -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Address</h3>
+                                    <input type="text" placeholder="Address" class="search_input_field small-text p-2">
+                                </div>
+                                <!-- Description -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Description</h3>
+                                    <textarea placeholder="Description"
+                                        class="search_input_field small-text p-2"></textarea>
+                                </div>
+                            </div>
+                            <!-- buttons -->
+                            <div class="d-flex gap-4 justify-content-end">
+                                <button class="secondary_outline_btn medium-text Medium w-25 px-0"
+                                    data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                                <button class="primary_btn medium-text Medium w-25 px-0">Done</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Event calendar modal -->
+<div class="modal fade" id="event" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content d-flex flex-column gap-3">
+            <div class="modal-header secondary_card_background modal_heading px-4 py-3">
+                <h1 class="modal-title small-text Medium" id="exampleModalToggleLabel"> 25-12-2024 <span>(Friday)
+                    </span></h1>
+                <div class="d-flex gap-2 calendar modal_actions_btn">
+                    <img class="cursor_pointer" src="assets/images/svg-img/edit-modal.svg" data-bs-toggle="modal"
+                        href="#eventedit">
+                    <img class="cursor_pointer" src="assets/images/svg-img/delete.svg">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="modal-body p-4 pt-0 modal_details d-flex flex-column gap-3">
+                <div class="d-flex gap-1 event_day">
+                    <h3 class="Medium medium-text mb-0">Christmas Day </h3>
+
+                    <!-- button holiday -->
+                    @if(!isTaskCompletedVisible){
+                    <button (click)="onHolidayButtonClick()"
+                        class="action_light_secondary_btn  smaller-text Medium py-1 px-3">
+                        Holiday
+                    </button>}
+                    <!-- task completed -->
+                    @if(isTaskCompletedVisible){
+                    <button  (click)="onTaskCompletedButtonClick()"
+                        class="taskbtn d-inline-block position-relative account_option">
+                        <label class="checkbox">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="d-none"
+                                [checked]="isTaskCompletedChecked">
+                            <span class="checkmark"></span>
+                            <div class="check_box">
+                                Task Completed
+                            </div>
+                        </label>
+                    </button>
+                }
+
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <u class="Medium small-text mb-0">Thoughts about</u>
+                    <h4 class="Regular small-text mb-0">Lorem ipsum dolor sit amet consectetur. Sit nisl purus eget
+                        elit. Sit volutpat ullamcorper leo faucibus adipiscing lorem ut nec tortor..</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Task calendar modal -->
+<div class="modal fade" id="task" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content d-flex flex-column gap-3">
+            <!-- modal headar -->
+            <div class="modal-header secondary_card_background modal_heading px-4 py-3">
+                <h1 class="modal-title small-text Medium" id="exampleModalToggleLabel"> 19-04-2024 <span>(Friday)
+                    </span></h1>
+                <div class="d-flex gap-2 modal_actions_btn">
+                    <img class="cursor_pointer" src="assets/images/svg-img/edit-modal.svg" data-bs-toggle="modal"
+                        href="#taskedit">
+                    <img class="cursor_pointer" src="assets/images/svg-img/delete.svg">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+            <!-- modal details -->
+            <div class=" modal_details p-4 pt-0 d-flex flex-column gap-4">
+                <!-- modal middle content -->
+                <div class="d-flex flex-column gap-3">
+                    <h3 class="Medium small-text mb-0">Title - Figma UI Design</h3>
+                    <div class="modal-body p-0 d-flex flex-column gap-2">
+                        <u class="Medium small-text mb-0">Description</u>
+                        <h4 class="Regular small-text mb-0">Lorem ipsum dolor sit amet consectetur. Sit nisl purus
+                            eget
+                            elit. Sit volutpat ullamcorper leo faucibus adipiscing lorem ut nec tortor..</h4>
+                    </div>
+                </div>
+                <!-- modal bottom -->
+                <div class="modal-footer border-0 p-0">
+                    <div class="form-check  d-inline-block position-relative account_option ms-auto">
+                        <label for="vehicle1" class="checkbox">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="d-none">
+                            <span class="checkmark"></span>
+                            <div class="check_box">
+                                Task Completed
+                            </div>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Event edit modal -->
+<div class="modal fade" id="eventedit" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog large_modal modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-4  modal_details d-flex flex-column gap-4">
+                <div class="single_tab">
+                    <button class="nav-link active p-1 Sub-Heading">Event</button>
+                </div>
+                <!-- Event edit -->
+                <div class="d-flex flex-column gap-3 add_task">
+                    <!-- title -->
+                    <div class="d-flex justify-content-between">
+                        <h3 class="mb-0">Title</h3>
+                        <input type="text" placeholder="Field Name " class="search_input_field small-text p-2">
+                    </div>
+                    <!-- Assignee select -->
+                    <div class="d-flex justify-content-between">
+                        <h3 class="mb-0">Assignee</h3>
+                        <select class=" search_input_field" aria-label="Default select example">
+                            <option selected>Rashmi Rajput</option>
+                            <option value="1">Mohit</option>
+                            <option value="2">Yogesh</option>
+                            <option value="3">Rashmi</option>
+                        </select>
+                    </div>
+                    <!-- Description -->
+                    <div class="d-flex justify-content-between">
+                        <h3 class="mb-0">Description</h3>
+                        <textarea placeholder="Description" class="search_input_field small-text p-2"></textarea>
+                    </div>
+                    <!-- checkbox -->
+                    <div class="d-flex modal_heading">
+                        <h3 class="mb-0">All day</h3>
+                        <div class="d-flex gap-2 position-relative check_box_field">
+                            <label class="modal_checkbox">
+                                <input type="checkbox">
+                                <span class="checkmarks"></span>
+                            </label>
+                            <h1 class="Caption Medium mb-0"> 25-12-2024 <span>(Friday)
+                                </span></h1>
+                        </div>
+                    </div>
+                    <!-- start date time -->
+                    <div class="d-flex  gap-4">
+                        <div class="d-flex justify-content-between w-50">
+                            <h3 class="mb-0 w-50">Start date</h3>
+                            <input type="text" placeholder="Field Name " class="search_input_field small-text p-2 w-75">
+                        </div>
+                        <div class="d-flex justify-content-between w-50">
+                            <h3 class="mb-0 w-50">Start time</h3>
+                            <input type="text" placeholder="Field Name " class="search_input_field small-text p-2 w-75">
+                        </div>
+                    </div>
+                    <div class="d-flex  gap-4">
+                        <div class="d-flex justify-content-between w-50">
+                            <h3 class="mb-0 w-50">Start time</h3>
+                            <input type="text" placeholder="Field Name " class="search_input_field small-text p-2 w-75">
+                        </div>
+                        <div class="d-flex justify-content-between w-50">
+                            <h3 class="mb-0 w-50">End time</h3>
+                            <input type="text" placeholder="Field Name " class="search_input_field small-text p-2 w-75">
+                        </div>
+                    </div>
+                </div>
+                <!-- buttons -->
+                <div class="d-flex gap-4 justify-content-end">
+                    <button class="secondary_outline_btn medium-text Medium w-25 px-0" data-bs-dismiss="modal"
+                        aria-label="Close">Cancel</button>
+                    <button class="primary_btn medium-text Medium w-25 px-0">Done</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Task edit modal -->
+<div class="modal fade" id="taskedit" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog large_modal modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-4  modal_details d-flex flex-column gap-4">
+                <div class="single_tab">
+                    <button class="nav-link active p-1 Sub-Heading">Task</button>
+                </div>
+                <!-- Task edit -->
+                <div class="d-flex flex-column gap-3 add_task">
+                    <!-- title -->
+                    <div class="d-flex justify-content-between">
+                        <h3 class="mb-0">Title</h3>
+                        <input type="text" placeholder="Field Name " class="search_input_field small-text p-2">
+                    </div>
+                    <!-- Assignee select -->
+                    <div class="d-flex justify-content-between">
+                        <h3 class="mb-0">Assignee</h3>
+                        <select class=" search_input_field" aria-label="Default select example">
+                            <option selected>Rashmi Rajput</option>
+                            <option value="1">Mohit</option>
+                            <option value="2">Yogesh</option>
+                            <option value="3">Rashmi</option>
+                        </select>
+                    </div>
+                    <!-- Description -->
+                    <div class="d-flex justify-content-between">
+                        <h3 class="mb-0">Description</h3>
+                        <textarea placeholder="Description" class="search_input_field small-text p-2"></textarea>
+                    </div>
+                    <!-- checkbox -->
+                    <div class="d-flex modal_heading">
+                        <h3 class="mb-0">All day</h3>
+                        <div class="d-flex gap-2 position-relative check_box_field">
+                            <label class="modal_checkbox">
+                                <input type="checkbox">
+                                <span class="checkmarks"></span>
+                            </label>
+                            <h1 class="Caption Medium mb-0"> 25-12-2024 <span>(Friday)
+                                </span></h1>
+                        </div>
+                    </div>
+                    <!-- start date time -->
+                    <div class="d-flex  gap-4">
+                        <div class="d-flex justify-content-between w-50">
+                            <h3 class="mb-0 w-50">Start date</h3>
+                            <input type="text" placeholder="Field Name " class="search_input_field small-text p-2 w-75">
+                        </div>
+                        <div class="d-flex justify-content-between w-50">
+                            <h3 class="mb-0 w-50">Start time</h3>
+                            <input type="text" placeholder="Field Name " class="search_input_field small-text p-2 w-75">
+                        </div>
+                    </div>
+                    <div class="d-flex  gap-4">
+                        <div class="d-flex justify-content-between w-50">
+                            <h3 class="mb-0 w-50">Start time</h3>
+                            <input type="text" placeholder="Field Name " class="search_input_field small-text p-2 w-75">
+                        </div>
+                        <div class="d-flex justify-content-between w-50">
+                            <h3 class="mb-0 w-50">End time</h3>
+                            <input type="text" placeholder="Field Name " class="search_input_field small-text p-2 w-75">
+                        </div>
+                    </div>
+                </div>
+                <!-- buttons -->
+                <div class="d-flex gap-4 justify-content-end">
+                    <button class="secondary_outline_btn medium-text Medium w-25 px-0" data-bs-dismiss="modal"
+                        aria-label="Close">Cancel</button>
+                    <button class="primary_btn medium-text Medium w-25 px-0">Done</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>s

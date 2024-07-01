@@ -1,0 +1,613 @@
+<!-- Task details -->
+<div class=" white_card_background p-4">
+    <div class="d-flex flex-column gap-4  h-100  overflow_scroll scrollbar_hide">
+        <!-- task tabs -->
+        <div class=" calendar_task ">
+            <!--  top  content -->
+            <div class="d-flex align-items-center gap-3">
+                <h2 class="card_heading Sub-Heading Medium mb-0">March</h2>
+                <img src="assets/images/svg-img/calender.svg">
+                <div class="action_light_btn small-text Medium px-2 py-1" data-bs-toggle="modal" href="#add">
+                    + Add
+                </div>
+            </div>
+            <div class="selectSection d-flex gap-3">
+                <button type="button" data-number="1" class="primary_outline_btn medium-text Medium px-4 ">
+                    Calendar
+                </button>
+                <button type="button" data-number="2" class="primary_outline_btn medium-text Medium px-4  active ">
+                    Task & Event
+                </button>
+            </div>
+        </div>
+        <!-- task tabs -->
+        <div class="single_tab">
+            <ul class="nav d-flex gap-4" id="pills-tab" role="tablist">
+                <!-- Add Task -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link p-1 Sub-Heading active" id="pills-Task-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-Task" type="button" role="tab" aria-controls="pills-Task"
+                        aria-selected="true">
+                        Task</button>
+                </li>
+                <!-- Add Event  -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link p-1 Sub-Heading" id="pills-Event-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-Event" type="button" role="tab" aria-controls="pills-Event"
+                        aria-selected="false" tabindex="-1">Event
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- tabs start -->
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Task tabs -->
+            <div class="tab-pane fade active show" id="pills-Task" role="tabpanel" aria-labelledby="pills-Task-tab"
+                tabindex="0">
+                <div class="d-flex flex-column gap-4">
+                    <!-- task details card -->
+                    <div class="d-flex justify-content-between task p-2">
+                        <div class="task_card d-flex flex-column gap-2">
+                            <h2 class="mb-0 small-text Medium">Rashmi Rajput (UI UX Designer)</h2>
+                            <h3 class="mb-0 small-text Medium">Title - Figma UI Design</h3>
+                            <h4 class="mb-0 medium-text Medium">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </h4>
+                            <div class="d-flex">
+                                <h5 class="Caption Medium secondary_card_background p-1 mb-0">
+                                    19-04-2024
+                                    <span>(Friday)
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <img src="assets/images/svg-img/dropdown_icon.svg" height="22" width="22"
+                                class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu dropdown_details">
+                                <li><a class="dropdown-item">Remove </a></li>
+                                <li><a class="dropdown-item">Task Completed</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between task p-2">
+                        <div class="task_card d-flex flex-column gap-2">
+                            <h2 class="mb-0 small-text Medium">Rashmi Rajput (UI UX Designer)</h2>
+                            <div class="d-flex align-items-center gap-2">
+                                <h3 class="mb-0 small-text Medium">Title - Figma UI Design</h3>
+                                <h5 class="smaller-text  Semibold mb-0  CVRequest_bg p-1 CVRequest ">
+                                    Completed
+                                </h5>
+                            </div>
+                            <h4 class="mb-0 medium-text Medium">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </h4>
+                            <div class="d-flex">
+                                <h5 class="Caption Medium secondary_card_background p-1 mb-0">
+                                    19-04-2024
+                                    <span>(Friday)
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <img src="assets/images/svg-img/dropdown_icon.svg" height="22" width="22"
+                                class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu dropdown_details">
+                                <li><a class="dropdown-item">Remove </a></li>
+                                <li><a class="dropdown-item">Task Completed</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between task p-2">
+                        <div class="task_card d-flex flex-column gap-2">
+                            <h2 class="mb-0 small-text Medium">Rashmi Rajput (UI UX Designer)</h2>
+                            <div class="d-flex align-items-center gap-2">
+                                <h3 class="mb-0 small-text Medium">Title - Figma UI Design</h3>
+                                <h5 class="smaller-text  Semibold mb-0  CVRequest_bg p-1 CVRequest ">
+                                    Completed
+                                </h5>
+                            </div>
+                            <h4 class="mb-0 medium-text Medium">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </h4>
+                            <div class="d-flex">
+                                <h5 class="Caption Medium secondary_card_background p-1 mb-0">
+                                    19-04-2024
+                                    <span>(Friday)
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <img src="assets/images/svg-img/dropdown_icon.svg" height="22" width="22"
+                                class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu dropdown_details">
+                                <li><a class="dropdown-item">Remove </a></li>
+                                <li><a class="dropdown-item">Task Completed</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between task p-2">
+                        <div class="task_card d-flex flex-column gap-2">
+                            <h2 class="mb-0 small-text Medium">Rashmi Rajput (UI UX Designer)</h2>
+                            <div class="d-flex align-items-center gap-2">
+                                <h3 class="mb-0 small-text Medium">Title - Figma UI Design</h3>
+                                <h5 class="smaller-text  Semibold mb-0  CVRequest_bg p-1 CVRequest ">
+                                    Completed
+                                </h5>
+                            </div>
+                            <h4 class="mb-0 medium-text Medium">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </h4>
+                            <div class="d-flex">
+                                <h5 class="Caption Medium secondary_card_background p-1 mb-0">
+                                    19-04-2024
+                                    <span>(Friday)
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <img src="assets/images/svg-img/dropdown_icon.svg" height="22" width="22"
+                                class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu dropdown_details">
+                                <li><a class="dropdown-item">Remove </a></li>
+                                <li><a class="dropdown-item">Task Completed</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between task p-2">
+                        <div class="task_card d-flex flex-column gap-2">
+                            <h2 class="mb-0 small-text Medium">Rashmi Rajput (UI UX Designer)</h2>
+                            <div class="d-flex align-items-center gap-2">
+                                <h3 class="mb-0 small-text Medium">Title - Figma UI Design</h3>
+                                <h5 class="smaller-text  Semibold mb-0  CVRequest_bg p-1 CVRequest ">
+                                    Completed
+                                </h5>
+                            </div>
+                            <h4 class="mb-0 medium-text Medium">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </h4>
+                            <div class="d-flex">
+                                <h5 class="Caption Medium secondary_card_background p-1 mb-0">
+                                    19-04-2024
+                                    <span>(Friday)
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <img src="assets/images/svg-img/dropdown_icon.svg" height="22" width="22"
+                                class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu dropdown_details">
+                                <li><a class="dropdown-item">Remove </a></li>
+                                <li><a class="dropdown-item">Task Completed</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between task p-2">
+                        <div class="task_card d-flex flex-column gap-2">
+                            <h2 class="mb-0 small-text Medium">Rashmi Rajput (UI UX Designer)</h2>
+                            <div class="d-flex align-items-center gap-2">
+                                <h3 class="mb-0 small-text Medium">Title - Figma UI Design</h3>
+                                <h5 class="smaller-text  Semibold mb-0  CVRequest_bg p-1 CVRequest ">
+                                    Completed
+                                </h5>
+                            </div>
+                            <h4 class="mb-0 medium-text Medium">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </h4>
+                            <div class="d-flex">
+                                <h5 class="Caption Medium secondary_card_background p-1 mb-0">
+                                    19-04-2024
+                                    <span>(Friday)
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <img src="assets/images/svg-img/dropdown_icon.svg" height="22" width="22"
+                                class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu dropdown_details">
+                                <li><a class="dropdown-item">Remove </a></li>
+                                <li><a class="dropdown-item">Task Completed</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event tabs -->
+            <div class="tab-pane fade" id="pills-Event" role="tabpanel" aria-labelledby="pills-Event-tab" tabindex="0">
+                <div class="d-flex flex-column gap-4">
+                    <div class="d-flex flex-column gap-4">
+                        <!-- event details card -->
+                        <div class="d-flex justify-content-between task p-2">
+                            <div class="task_card d-flex flex-column gap-2">
+                                <h2 class="mb-0 small-text Medium">Christmas Day</h2>
+                                <h4 class="mb-0 medium-text Medium">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </h4>
+                                <div class="d-flex">
+                                    <h5 class="Caption Medium secondary_card_background p-1 mb-0">
+                                        19-04-2024
+                                        <span>(Friday)
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <img src="assets/images/svg-img/dropdown_icon.svg" height="22" width="22"
+                                    class=" dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                <ul class="dropdown-menu dropdown_details">
+                                    <li><a class="dropdown-item">Remove </a></li>
+                                    <li><a class="dropdown-item">Task Completed</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between task p-2">
+                            <div class="task_card d-flex flex-column gap-2">
+                                <div class="d-flex align-items-center gap-2">
+                                    <h2 class="mb-0 small-text Medium">Christmas Day</h2>
+                                    <h5 class="smaller-text  Semibold mb-0  CVRequest_bg p-1 CVRequest ">
+                                        Completed
+                                    </h5>
+                                </div>
+                                <h4 class="mb-0 medium-text Medium">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </h4>
+                                <div class="d-flex">
+                                    <h5 class="Caption Medium secondary_card_background p-1 mb-0">
+                                        19-04-2024
+                                        <span>(Friday)
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <img src="assets/images/svg-img/dropdown_icon.svg" height="22" width="22"
+                                    class=" dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                <ul class="dropdown-menu dropdown_details">
+                                    <li><a class="dropdown-item">Remove </a></li>
+                                    <li><a class="dropdown-item">Task Completed</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between task p-2">
+                            <div class="task_card d-flex flex-column gap-2">
+                                <div class="d-flex align-items-center gap-2">
+                                    <h2 class="mb-0 small-text Medium">Christmas Day</h2>
+                                    <h5 class="smaller-text  Semibold mb-0  CVRequest_bg p-1 CVRequest ">
+                                        Completed
+                                    </h5>
+                                </div>
+                                <h4 class="mb-0 medium-text Medium">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </h4>
+                                <div class="d-flex">
+                                    <h5 class="Caption Medium secondary_card_background p-1 mb-0">
+                                        19-04-2024
+                                        <span>(Friday)
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <img src="assets/images/svg-img/dropdown_icon.svg" height="22" width="22"
+                                    class=" dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                <ul class="dropdown-menu dropdown_details">
+                                    <li><a class="dropdown-item">Remove </a></li>
+                                    <li><a class="dropdown-item">Task Completed</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between task p-2">
+                            <div class="task_card d-flex flex-column gap-2">
+                                <div class="d-flex align-items-center gap-2">
+                                    <h2 class="mb-0 small-text Medium">Christmas Day</h2>
+                                    <h5 class="smaller-text  Semibold mb-0  CVRequest_bg p-1 CVRequest ">
+                                        Completed
+                                    </h5>
+                                </div>
+                                <h4 class="mb-0 medium-text Medium">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </h4>
+                                <div class="d-flex">
+                                    <h5 class="Caption Medium secondary_card_background p-1 mb-0">
+                                        19-04-2024
+                                        <span>(Friday)
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <img src="assets/images/svg-img/dropdown_icon.svg" height="22" width="22"
+                                    class=" dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                <ul class="dropdown-menu dropdown_details">
+                                    <li><a class="dropdown-item">Remove </a></li>
+                                    <li><a class="dropdown-item">Task Completed</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between task p-2">
+                            <div class="task_card d-flex flex-column gap-2">
+                                <div class="d-flex align-items-center gap-2">
+                                    <h2 class="mb-0 small-text Medium">Christmas Day</h2>
+                                    <h5 class="smaller-text  Semibold mb-0  CVRequest_bg p-1 CVRequest ">
+                                        Completed
+                                    </h5>
+                                </div>
+                                <h4 class="mb-0 medium-text Medium">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </h4>
+                                <div class="d-flex">
+                                    <h5 class="Caption Medium secondary_card_background p-1 mb-0">
+                                        19-04-2024
+                                        <span>(Friday)
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <img src="assets/images/svg-img/dropdown_icon.svg" height="22" width="22"
+                                    class=" dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                <ul class="dropdown-menu dropdown_details">
+                                    <li><a class="dropdown-item">Remove </a></li>
+                                    <li><a class="dropdown-item">Task Completed</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Add Task/Event calendar modal -->
+<div class="modal fade" id="add" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog large_modal modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-4  modal_details d-flex flex-column gap-4">
+                <div class="single_tab">
+                    <ul class="nav d-flex gap-4" id="pills-tab" role="tablist">
+                        <!-- Add Task -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active p-1 Sub-Heading" id="pills-AddTask-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-AddTask" type="button" role="tab" aria-controls="pills-AddTask"
+                                aria-selected="true">Add Task</button>
+                        </li>
+                        <!-- Add Event  -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link p-1 Sub-Heading" id="pills-AddEvent-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-AddEvent" type="button" role="tab" aria-controls="pills-AddEvent"
+                                aria-selected="false" tabindex="-1">Add Event
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- tabs start -->
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-- Add Task tabs -->
+                    <div class="tab-pane fade show active" id="pills-AddTask" role="tabpanel"
+                        aria-labelledby="pills-AddTask-tab" tabindex="0">
+                        <div class="d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-3 add_task">
+                                <!-- title -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Title</h3>
+                                    <input type="text" placeholder="Field Name "
+                                        class="search_input_field small-text p-2">
+                                </div>
+                                <!-- Assignee select -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Assignee</h3>
+                                    <select class=" search_input_field" aria-label="Default select example">
+                                        <option selected>Rashmi Rajput</option>
+                                        <option value="1">Mohit</option>
+                                        <option value="2">Yogesh</option>
+                                        <option value="3">Rashmi</option>
+                                    </select>
+                                </div>
+
+                                <!-- Description -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Description</h3>
+                                    <textarea placeholder="Description"
+                                        class="search_input_field small-text p-2"></textarea>
+                                </div>
+                                <!-- checkbox -->
+                                <div class="d-flex modal_heading">
+                                    <h3 class="mb-0">All day</h3>
+                                    <div class="d-flex gap-2 position-relative  check_box_field">
+                                        <label class="modal_checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmarks"></span>
+                                        </label>
+                                        <h1 class="Caption Medium mb-0"> 25-12-2024 <span>(Friday)
+                                            </span></h1>
+                                    </div>
+                                </div>
+                                <!-- start date time -->
+                                <div class="d-flex  gap-4">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start date</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                </div>
+                                <div class="d-flex  gap-4">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">End time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- buttons -->
+                            <div class="d-flex gap-4 justify-content-end">
+                                <button class="secondary_outline_btn medium-text Medium w-25 px-0"
+                                    data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                                <button class="primary_btn medium-text Medium w-25 px-0">Done</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Event  tabs -->
+                    <div class="tab-pane fade" id="pills-AddEvent" role="tabpanel" aria-labelledby="pills-AddEvent-tab"
+                        tabindex="0">
+                        <div class="d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-3 add_task">
+                                <!-- title -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Title</h3>
+                                    <input type="text" placeholder="Field Name "
+                                        class="search_input_field small-text p-2">
+                                </div>
+                                <!-- start date time -->
+                                <div class="d-flex  gap-4">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start date</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                </div>
+                                <div class="d-flex  gap-4">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">Start time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <h3 class="mb-0 w-50">End time</h3>
+                                        <input type="text" placeholder="Field Name "
+                                            class="search_input_field small-text p-2 w-75">
+                                    </div>
+                                </div>
+                                <!-- checkbox -->
+                                <div class="d-flex modal_heading">
+                                    <h3 class="mb-0">All day</h3>
+                                    <div class="d-flex gap-2 position-relative check_box_field">
+                                        <label class="modal_checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmarks"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- goole meet -->
+                                <div class="d-flex justify-content-between">
+                                    <div class="googlemeet d-flex justify-content-start">
+                                        <img src="assets/images/svg-img/google_meet_icon1.svg" height="42">
+                                    </div>
+                                    <div class="google_meet_clipboard">
+                                        <button id="meet-button" class="meet-button small-text Medium"
+                                            onclick="showLoading()">Add Google
+                                            Meet video conferencing</button>
+                                        <!-- loading-spinner -->
+                                        <div id="loading-spinner" class="loading-spinner" style="display: none;">
+                                        </div>
+                                        <!-- after loading add link -->
+                                        <div id="after-loading" class="after-loading" style="display: none;">
+                                            <button id="join-button"
+                                                class="meet_btn small-text Medium">meet.google.com/ipr-tnkp-kyvUp to
+                                                100 guest connections</button>
+                                            <!-- action buttons -->
+                                            <div>
+                                                <!-- copy button -->
+                                                <button id="copy-link-button" class="meet_btn" onclick="copyLink()"><img
+                                                        src="assets/images/svg-img/clipboard.svg" height="20"></button>
+                                                <!-- close button -->
+                                                <button id="close-button" class="meet_btn" onclick="closeActions()"><img
+                                                        src="assets/images/svg-img/close.svg" height="20"
+                                                        class="gray"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Assignee select -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Assignee</h3>
+                                    <select class=" search_input_field" aria-label="Default select example">
+                                        <option selected>Rashmi Rajput</option>
+                                        <option value="1">Mohit</option>
+                                        <option value="2">Yogesh</option>
+                                        <option value="3">Rashmi</option>
+                                    </select>
+                                </div>
+                                <!-- Location -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Location</h3>
+                                    <input type="text" placeholder="Location" class="search_input_field small-text p-2">
+                                </div>
+                                <!-- Address -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Address</h3>
+                                    <input type="text" placeholder="Address" class="search_input_field small-text p-2">
+                                </div>
+                                <!-- Description -->
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="mb-0">Description</h3>
+                                    <textarea placeholder="Description"
+                                        class="search_input_field small-text p-2"></textarea>
+                                </div>
+                            </div>
+                            <!-- buttons -->
+                            <div class="d-flex gap-4 justify-content-end">
+                                <button class="secondary_outline_btn medium-text Medium w-25 px-0"
+                                    data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                                <button class="primary_btn medium-text Medium w-25 px-0">Done</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

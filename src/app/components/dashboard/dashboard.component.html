@@ -1,0 +1,208 @@
+<div class="row dashboard_card">
+    <!-- candidates -->
+    <app-candidates class="col-md-6 mb-4"></app-candidates>
+    <!-- emails -->
+    <app-emails class="col-md-6 mb-4"></app-emails>
+</div>
+<!-- calendar -->
+<app-calendar></app-calendar>
+
+<!-- CHAT BOX MODAL START -->
+<button class="open-button cursor_pointer" onclick="openForm()" id="open">
+    <img src="assets/images/svg-img/chat-icon.svg" height="43" width="43">
+</button>
+<button type="button" class="open-button cursor_pointer" onclick="closeForm()" id="close">
+    <img src="assets/images/svg-img/close.svg" height="43" width="43">
+</button>
+
+<!-- Chat box modal details -->
+<div class="chat-popup" id="myForm">
+    <div class="dashboard-chat-area">
+        <!-- chatlist -->
+        <div class="white_card_background p-0 w-100">
+            <div class="dashboard-chat-lists">
+                <div class="d-flex justify-content-between gap-2 p-3">
+                    <!-- search bar -->
+                    <div class="position-relative w-100">
+                        <img src="assets/images/svg-img/search.svg" class="chat_search_icon gray">
+                        <input type="text" placeholder="Search" class="chat_user_search py-2 ps-5 px-3 w-100">
+                    </div>
+                    <!-- Group chat dropdown-->
+                    <div class="dropdown position-relative chat_edit cursor_pointer">
+                        <div href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            aria-expanded="true">
+                            <img src="assets/images/svg-img/edit.svg" class="white-filter">
+                        </div>
+
+                        <ul class="dropdown-menu small_dropdown p-3 mt-2" aria-labelledby="dropdownMenuLink"
+                            data-popper-placement="bottom-end">
+                            <div class="d-flex align-items-center gap-2">
+                                <img src="assets/images/svg-img/group-chat.svg">
+                                <h2 class="small-text Medium mb-0">Group chat</h2>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <!-- user dashboard-chat-list -->
+                <div class="dashboard-chat-list">
+                    <a class="d-flex gap-3 user-chat" data-user="jessica">
+                        <img src="assets/images/svg-img/Avatar-chat.svg" class="avtar rounded-circle">
+                        <div class="user_chat">
+                            <h4 class="medium-text Medium mb-1">Jessica Drew</h4>
+                            <h3 class="Caption small-text mb-0">Ok, see you later</h3>
+                        </div>
+                        <div class="ms-auto mx-0 user_chat_right d-flex flex-column align-items-end">
+                            <h3 class="Caption Regular mb-1">18:30</h3>
+                            <span class="Caption Regular">2</span>
+                        </div>
+                    </a>
+                    <a class="d-flex gap-3 user-chat" data-user="david">
+                        <img src="assets/images/svg-img/Avatar-chat-2.svg" class="avtar rounded-circle">
+                        <div class="user_chat">
+                            <h4 class="medium-text Medium mb-1">David Moore</h4>
+                            <h3 class="Caption small-text mb-0">You: I don't remember anything 😄
+                            </h3>
+                        </div>
+                        <div class="ms-auto mx-0 user_chat_right d-flex flex-column align-items-end">
+                            <h3 class="Caption Regular mb-1">18:30</h3>
+                            <span class="Caption Regular">2</span>
+                        </div>
+                    </a>
+                    <a class="d-flex gap-3 user-chat" data-user="jessica">
+                        <img src="assets/images/svg-img/Avatar-chat.svg" class="avtar rounded-circle">
+                        <div class="user_chat">
+                            <h4 class="medium-text Medium mb-1">Jessica Drew</h4>
+                            <h3 class="Caption small-text mb-0">Ok, see you later</h3>
+                        </div>
+                        <div class="ms-auto mx-0 user_chat_right d-flex flex-column align-items-end">
+                            <h3 class="Caption Regular mb-1">18:30</h3>
+                            <span class="Caption Regular">2</span>
+                        </div>
+                    </a>
+                    <a class="d-flex gap-3 user-chat" data-user="jessica">
+                        <img src="assets/images/svg-img/Avatar-chat.svg" class="avtar rounded-circle">
+                        <div class="user_chat">
+                            <h4 class="medium-text Medium mb-1">Jessica Drew</h4>
+                            <h3 class="Caption small-text mb-0">Ok, see you later</h3>
+                        </div>
+                        <div class="ms-auto mx-0 user_chat_right d-flex flex-column align-items-end">
+                            <h3 class="Caption Regular mb-1">18:30</h3>
+                            <span class="Caption Regular">2</span>
+                        </div>
+                    </a>
+                    <!-- Add more chat list items here as needed -->
+                </div>
+            </div>
+        </div>
+
+        <!-- chatbox -->
+        <div class="chatbox p-4">
+            <div class="modal-dialog-scrollable">
+                <div class="modal-content rounded-0 gap-4">
+                    <!-- chatbox top -->
+                    <div class="d-flex align-items-center gap-3 p-3 secondary_card_background">
+                        <span class="chat-icon"><img class="img-fluid" src="assets/images/svg-img/arrow-left.svg"
+                                alt="image title"></span>
+                        <img src="assets/images/svg-img/Avatar-chat-2.svg" class="avtar">
+                        <div class="user_chat">
+                            <h4 class="medium-text Semibold mb-1">David Moore</h4>
+                            <h3 class="Caption mb-0 d-flex align-items-center gap-2"><span class="circle"></span> Online
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- chatbox middle -->
+                    <div class="modal-body scrollbar_hide">
+                        <ul class="d-flex flex-column  p-0">
+                            <!-- Today -->
+                            <div class="d-flex justify-content-center chat_box mb-3">
+                                <h3 class="Primarylight_background  py-1 px-2 small-text Regular mb-0">
+                                    Today</h3>
+                            </div>
+                            <!-- sender -->
+                            <div class="d-flex gap-3">
+                                <img src="assets/images/svg-img/Avatar-chat-2.svg" class="avtar">
+                                <div class="message_sender">
+                                    <div class="d-flex flex-column align-items-start gap-1">
+                                        <h3 class="Regular Caption mb-0">David Moore, 11:10am</h3>
+                                        <h4 class="Medium small-text mb-0 secondary_card_background py-2 px-3">
+                                            omg, this is amazing</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- reply -->
+                            <div class="d-flex justify-content-end gap-3">
+                                <div class="message_sender">
+                                    <div class="d-flex flex-column align-items-start gap-1">
+                                        <h3 class="Regular Caption mb-0 mx-0 ms-auto">11:10am</h3>
+                                        <h5 class="Medium small-text mb-0 primary_card_background py-2 px-3">
+                                            How are you?</h5>
+                                    </div>
+                                </div>
+                                <img src="assets/images/svg-img/Avatar-chat-2.svg" class="avtar">
+                            </div>
+                            <!-- again sender -->
+                            <div class="d-flex gap-3">
+                                <img src="assets/images/svg-img/Avatar-chat-2.svg" class="avtar">
+                                <div class="message_sender">
+                                    <div class="d-flex flex-column align-items-start gap-1">
+                                        <h3 class="Regular Caption mb-0">David Moore, 11:10am</h3>
+                                        <h4 class="Medium small-text mb-0 secondary_card_background py-2 px-3">
+                                            omg, this is amazing</h4>
+                                        <h4 class="Medium small-text mb-0 secondary_card_background py-2 px-3">
+                                            omg, this is amazing</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- again reply -->
+                            <div class="d-flex justify-content-end gap-3">
+                                <div class="message_sender">
+                                    <div class="d-flex flex-column align-items-start gap-1">
+                                        <h3 class="Regular Caption mb-0 mx-0 ms-auto">11:10am</h3>
+                                        <h5 class="Medium small-text mb-0 primary_card_background py-2 px-3">
+                                            How are you?</h5>
+                                    </div>
+                                </div>
+                                <img src="assets/images/svg-img/Avatar-chat-2.svg" class="avtar">
+                            </div>
+
+                        </ul>
+                    </div>
+                    <!-- chatbox bottom send message -->
+                    <div class="send-box">
+                        <div class="d-flex justify-content-between align-items-center secondary_card_background px-2">
+                            <!-- file attechment dropdown-->
+
+                            <div class="dropdown position-relative  cursor_pointer">
+                                <div href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                    aria-expanded="true">
+                                    <img src="assets/images/svg-img/attechment.svg" class="cursor_pointer">
+                                </div>
+
+                                <ul class="dropdown-menu small_dropdown p-0 mb-3" aria-labelledby="dropdownMenuLink"
+                                    data-popper-placement="bottom-end">
+                                    <div class="d-flex align-items-center gap-2 p-3 border_bottom">
+                                        <img src="assets/images/svg-img/gallery.svg">
+                                        <h2 class="small-text Medium mb-0">Photo or video</h2>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 p-3 border_bottom">
+                                        <img src="assets/images/svg-img/audio.svg">
+                                        <h2 class="small-text Medium mb-0">Audio</h2>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 p-3">
+                                        <img src="assets/images/svg-img/document.svg">
+                                        <h2 class="small-text Medium mb-0">File</h2>
+                                    </div>
+                                </ul>
+                            </div>
+                            <input type="text"
+                                class="input_text border-0 py-2 p-2 w-75 small-text Medium secondary_card_background"
+                                placeholder="Type a message">
+                            <button type="submit"
+                                class="send_btn medium-text Medium py-1 p-3 mx-0 ms-auto position-static">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   

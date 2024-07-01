@@ -1,0 +1,29 @@
+/* HEADER CSS */
+.header {
+    padding: 12px 20px;
+    height: 58px;
+    background-color: var(--WhiteBackground-color);
+}
+
+.relative-position {
+    position: relative;
+  }
+  
+  .language-dropdown {
+    position: absolute;
+    top: 40px; /* Adjust this value as needed to position below the image */
+    left: 0;
+    width: auto; /* Adjust width as needed */
+    z-index: 1000; /* Ensure dropdown is above other elements if needed */
+    background-color: #fff; /* Optional: Set background color */
+    border: 1px solid #ccc; /* Optional: Add border */
+    padding: 5px; /* Optional: Add padding */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Add shadow */
+    display: none; /* Hide dropdown by default */
+  }
+  
+  .language-dropdown.active {
+    display: block; /* Show dropdown when active class is applied */
+  }
+  
+  

@@ -1,0 +1,155 @@
+<!-- HEADER START -->
+<nav class="header d-flex align-items-center" id="header">
+    <div class="backarrow cursor_pointer" id="backarrow" (click)="backButton()">
+        <img src="assets/images/svg-img/back.svg" height="24" width="24">
+    </div>
+    <div class="right-admin-profile d-flex align-items-center gap-3">
+        <!-- language change -->
+        <div class="d-flex align-items-center relative-position">
+            <img src="assets/images/svg-img/language.svg" height="30" width="30" > 
+            <!-- <img src="assets/images/svg-img/language.svg" height="30" width="30" (click)="toggleDropdown()"> -->
+            <!-- <select class="language-dropdown" id="languageDropdown" name="selectedLanguage" [(ngModel)]="selectedLanguage" [class.active]="isOpen" (change)="onLanguageChange($event)">
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+              <option value="hi">Hindi</option>
+              <option value="bho">Bhojpuri</option>
+            </select> -->
+            <!-- Add more options as needed -->
+          </div>
+             
+        <!-- notification -->
+        <div class="position-relative">
+            <img src="assets/images/svg-img/notification.svg" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <span class="notification_circle Semibold d-flex justify-content-center align-items-center">6</span>
+        </div>
+        <!-- profile dropdown -->
+        <div class="dropdown position-relative">
+            <a class="d-flex align-items-center medium-text Medium gap-2" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="true">
+                <img class="profile_img" src="assets/images/svg-img/profile.svg">
+                Rashmi Rajput
+                <img src="assets/images/svg-img/arrow.svg" class="blue-filter mx-0 ms-2 arrow_transform">
+            </a>
+            <ul class="dropdown-menu profiles_dropdown" aria-labelledby="dropdownMenuLink"
+                data-popper-placement="bottom-end">
+                <div class="mb-3">
+                    <li class="profile_dropdown d-flex align-items-center gap-3">
+                        <img class="profile_img" src="assets/images/svg-img/user-icon.svg">
+                        <div>
+                            <h2 class="medium-text Medium mb-1">Rashmi Rajput</h2>
+                            <h3 class="Regular Caption mb-0">yournamegmail.com</h3>
+                        </div>
+                    </li>
+                </div>
+                <!-- setting -->
+                <div class="d-flex flex-column gap-3 profile_list">
+                    <li class="gap-2 p-2 d-flex align-items-center  small-text Medium">
+                        <img class="profile_icon" src="assets/images/svg-img/settings.svg">
+                        Setting
+                        <div class="mb-0 lh-0 mx-0 ms-auto p-0 dark-gray"><img src="assets/images/svg-img/arrow.svg">
+                        </div>
+
+                    </li>
+                    <!-- theme change -->
+                    <li class="gap-2 p-2 d-flex align-items-center small-text Medium">
+                        <img class="profile_icon" src="assets/images/svg-img/theme.svg">
+                        Theme
+                        <!-- THEME CHANGE -->
+                        <div class="mx-0 ms-auto position-relative">
+                            <label class="switch ">
+                                <input type="checkbox">
+                                <span class="slider round cursor_pointer"></span>
+                            </label>
+                        </div>
+                    </li>
+                    <!-- notification -->
+                    <li class="gap-2 p-2 d-flex align-items-center small-text Medium">
+                        <img class="profile_icon" src="assets/images/svg-img/notification.svg">
+                        Notification
+                        <label class="switch mx-0 ms-auto ">
+                            <input type="checkbox">
+                            <span class="slider round cursor_pointer"></span>
+                        </label>
+                    </li>
+                    <!-- logout -->
+                    <li class="gap-2 p-2 d-flex align-items-center  small-text Medium danger">
+                        <img class="profile_icon" src="assets/images/svg-img/logout.svg">Logout
+                        <div class="mb-0 lh-0 mx-0 ms-auto p-0 dark-gray"><img src="assets/images/svg-img/arrow.svg">
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- NOTIFICATION -->
+
+<div class="offcanvas offcanvas-end p-3" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header p-0 mb-4">
+        <h5 id="offcanvasRightLabel" class="Sub-Heading Medium mb-0">Notifications</h5>
+        <h6 class="small-text Medium mb-0" data-bs-dismiss="offcanvas" aria-label="Close">Clear all</h6>
+    </div>
+    <div class="offcanvas-body p-0 d-flex flex-column gap-3">
+        <!-- notification cards -->
+        <div class="secondary_card_background p-2 notification_card">
+            <div class="d-flex justify-content-between mb-2">
+                <h5 class="mb-0 small-text Medium">Notification Heading</h5>
+                <h6 class="mb-0 Caption Regular ">6 hours ago</h6>
+            </div>
+            <h6 class="mb-0 Caption Medium ">Notification Text</h6>
+        </div>
+        <div class="secondary_card_background p-2 notification_card">
+            <div class="d-flex justify-content-between mb-2">
+                <h5 class="mb-0 small-text Medium">Notification Heading</h5>
+                <h6 class="mb-0 Caption Regular ">6 hours ago</h6>
+            </div>
+            <h6 class="mb-0 Caption Medium ">Notification Text</h6>
+        </div>
+        <div class="secondary_card_background p-2 notification_card">
+            <div class="d-flex justify-content-between mb-2">
+                <h5 class="mb-0 small-text Medium">Notification Heading</h5>
+                <h6 class="mb-0 Caption Regular ">6 hours ago</h6>
+            </div>
+            <h6 class="mb-0 Caption Medium ">Notification Text</h6>
+        </div>
+        <div class="secondary_card_background p-2 notification_card">
+            <div class="d-flex justify-content-between mb-2">
+                <h5 class="mb-0 small-text Medium">Notification Heading</h5>
+                <h6 class="mb-0 Caption Regular ">6 hours ago</h6>
+            </div>
+            <h6 class="mb-0 Caption Medium ">Notification Text</h6>
+        </div>
+        <div class="secondary_card_background p-2 notification_card">
+            <div class="d-flex justify-content-between mb-2">
+                <h5 class="mb-0 small-text Medium">Notification Heading</h5>
+                <h6 class="mb-0 Caption Regular ">6 hours ago</h6>
+            </div>
+            <h6 class="mb-0 Caption Medium ">Notification Text</h6>
+        </div>
+        <div class="secondary_card_background p-2 notification_card">
+            <div class="d-flex justify-content-between mb-2">
+                <h5 class="mb-0 small-text Medium">Notification Heading</h5>
+                <h6 class="mb-0 Caption Regular ">6 hours ago</h6>
+            </div>
+            <h6 class="mb-0 Caption Medium ">Notification Text</h6>
+        </div>
+        <div class="secondary_card_background p-2 notification_card">
+            <div class="d-flex justify-content-between mb-2">
+                <h5 class="mb-0 small-text Medium">Notification Heading</h5>
+                <h6 class="mb-0 Caption Regular ">6 hours ago</h6>
+            </div>
+            <h6 class="mb-0 Caption Medium ">Notification Text</h6>
+        </div>
+        <div class="secondary_card_background p-2 notification_card">
+            <div class="d-flex justify-content-between mb-2">
+                <h5 class="mb-0 small-text Medium">Notification Heading</h5>
+                <h6 class="mb-0 Caption Regular ">6 hours ago</h6>
+            </div>
+            <h6 class="mb-0 Caption Medium ">Notification Text</h6>
+        </div>
+    </div>
+</div>

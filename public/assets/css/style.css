@@ -1,0 +1,1540 @@
+/* ROOT VARIABLE */
+
+/* LIGHT THEME */
+:root,
+[data-theme="light"] {
+
+  --Primary-color: #083160;
+  /* Blue */
+
+  --PrimaryBackground-color: #083160;
+  /* Blue */
+
+  --Primarylight-color: #EBFBFF;
+  /* Bluelight */
+
+  --Secondary-color: #F8F4F0;
+  /* Linen */
+
+  --Action-color: #00A0A3;
+  /* LightSeaGreen */
+
+  --ActionLight-color: #EFFEFD;
+  /* Light */
+
+  --WhiteBackground-color: #FFFFFF;
+  /* White */
+
+  --Textwhite-color: #FFFFFF;
+  /* White */
+
+  --Success-color: #03B517;
+  /* Green */
+
+  --Red-color: rgb(237, 17, 18);
+  /* Red */
+
+  --Orange-color: #FF6D00;
+  /* Orange */
+
+  --SlateGray-color: #7E8B9C;
+  /* SlateGray	 */
+
+  --Pink-color: #BB2A6D;
+  /* Black */
+
+  --DarkBlue-color: #07284B;
+  /* DarkBlue */
+
+  --Yellow-color: #FDB200;
+  /* Yellow */
+
+  --lightGreen-color: #8ECC47;
+  /* LightGreen */
+
+  --Gray-color: #B0B0B0;
+  /* Gray */
+
+  --TextDark-color: #2F3337;
+  /* Dark */
+
+  --TextDark2-color: #2F3337;
+  /* Dark */
+
+  --TextLight-color: #7D8C9D;
+  /* Light */
+
+  --Input-color: #FFFFFF;
+  /* Light */
+
+  --Border-color: #E7E7E7;
+
+  --LinearGradient-color: linear-gradient(90deg, rgba(253, 253, 253, 0.20) 0%, rgba(253, 253, 253, 0.00) 100%);
+  /* Gradient */
+
+  --light: #E5E5E5;
+
+  --chat-background: #D3F3FF;
+
+
+}
+
+/* DARK THEME */
+[data-theme="dark"] {
+
+  --Primary-color: #E7E7E7;
+  /* Blue */
+
+  --PrimaryBackground-color: #0D0D0D;
+  /* Blue */
+
+  --Primarylight-color: #171717;
+  /* Bluelight */
+
+  --Secondary-color: #171918;
+  /* Linen */
+
+  --Action-color: #04C8C7;
+  /* LightSeaGreen */
+
+  --WhiteBackground-color: #0D0D0D;
+  /* White */
+
+  --Success-color: #03B517;
+  /* Green */
+
+  --Red-color: #ED1112;
+  /* Red */
+
+  --Orange-color: #FF6D00;
+  /* Orange */
+
+  --SlateGray-color: #7E8B9C;
+  /* SlateGray	 */
+
+  --Pink-color: #BB2A6D;
+  /* Black */
+
+  --DarkBlue-color: #07284B;
+  /* DarkBlue */
+
+  --Yellow-color: #FDB200;
+  /* Yellow */
+
+  --lightGreen-color: #8ECC47;
+  /* LightGreen */
+
+  --Textwhite-color: #E7E7E7;
+  /* White */
+
+  --TextDark-color: #F6F6F6;
+  /* Dark */
+
+  --TextDark2-color: #2F3337;
+  /* Dark */
+
+  --TextLight-color: #D1D1D1;
+  /* Light */
+
+  --Input-color: #24282D;
+  /* Light */
+
+  --Border-color: #262626;
+
+
+  --LinearGradient-color: linear-gradient(90deg, rgba(0, 185, 188, 0.20) 0%, rgba(253, 253, 253, 0.00) 100%);
+  /* Gradient */
+
+  --chat-background: #D3F3FF;
+
+
+}
+
+/* CUSTOM CSS HERE */
+* {
+  font-family: "Galano Classic";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  box-sizing: border-box;
+  line-height: normal;
+}
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #cfcfcf; 
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  max-width: 1500px !important;
+}
+
+.lh-0 {
+  line-height: 0px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+/* CUSTOM CSS */
+
+/* FONT SIZE */
+.Heading {
+  font-size: clamp(16px, 2vw, 32px);
+}
+
+.large-text {
+  font-size: clamp(14px, 1vw, 20px);
+}
+
+.Sub-Heading {
+  font-size: clamp(14px, 1vw, 18px) !important;
+}
+
+.medium-text {
+  font-size: clamp(12px, 1vw, 16px);
+}
+
+.small-text {
+  font-size: clamp(12px, 1vw, 14px) !important;
+}
+
+.Caption {
+  font-size: clamp(10px, 1vw, 12px);
+}
+
+.smaller-text {
+  font-size: 11px;
+}
+
+.x-small-text {
+  font-size: 10px;
+}
+
+
+/* FONT WEIGHT */
+
+.light {
+  font-weight: 300;
+}
+
+.Regular {
+  font-weight: 400;
+}
+
+.Medium {
+  font-weight: 500;
+}
+
+.Semibold {
+  font-weight: 600;
+}
+
+.Bold {
+  font-weight: 700;
+}
+
+:focus-visible {
+  outline: var(--Primary-color) auto 0px;
+}
+
+
+/* background colors */
+.white_card_background {
+  background-color: var(--WhiteBackground-color) !important;
+}
+
+.secondary_card_background {
+  background-color: var(--Secondary-color);
+}
+
+.primary_card_background {
+  background-color: var(--Primary-color);
+}
+
+.action_card_background {
+  background-color: var(--Action-color);
+}
+
+.Primarylight_background {
+  background-color: var(--Primarylight-color);
+}
+
+/* color */
+.action_color {
+  color: var(--Action-color);
+}
+
+.danger {
+  color: var(--Red-color) !important;
+}
+
+/* buttons  */
+.primary_btn {
+  background-color: var(--Action-color);
+  color: var(--WhiteBackground-color);
+  box-shadow: 0px 0px 14px 0px rgba(0, 160, 163, 0.13);
+  border: 1px solid transparent;
+  padding: 8px 48px;
+}
+
+.primary_outline_btn {
+  background-color: transparent;
+  border: 1px solid var(--Action-color);
+  color: var(--Action-color);
+  box-shadow: 0px 0px 14px 0px rgba(0, 160, 163, 0.13);
+  padding: 4px 48px;
+  white-space: nowrap;
+}
+
+.secondary_btn {
+  color: var(--TextLight-color);
+  border: 1px solid var(--Gray-color);
+  padding: 4px 8px;
+  background-color: transparent;
+}
+
+.secondary_outline_btn {
+  color: var(--TextDark-color);
+  border: 1px solid var(--Border-color);
+  padding: 8px 48px;
+  background-color: transparent;
+}
+
+.outline_primary_btn {
+  padding: 6px 12px;
+  border: 1px solid var(--Action-color);
+  color: var(--Action-color);
+  background-color: var(--WhiteBackground-color);
+}
+
+/* filter  */
+.filter_status {
+  border: 1px solid var(--Gray-color) !important;
+  color: var(--TextLight-color);
+  background-color: transparent;
+}
+
+.gray_border_bottom {
+  border-bottom: 1px solid var(--border-bottom-color);
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+/* Borders */
+.gray_border_bottom {
+  border-bottom: 1px solid var(--border-bottom-color);
+}
+
+.border_bottom {
+  border-bottom: 1px solid var(--Border-color);
+}
+
+/* LOGIN CSS */
+
+.background_img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.login_middle_content {
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.login_details {
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.login_background {
+  padding: 60px;
+  height: 690px;
+  overflow: hidden;
+  background-color: var(--PrimaryBackground-color);
+}
+
+.login_content {
+  gap: 40px;
+  height: calc(100vh - 270px);
+  overflow: scroll;
+}
+
+.login_text h1 {
+  color: var(--Textwhite-color);
+}
+
+.login_text h2 {
+  color: var(--Textwhite-color);
+}
+
+.login_bottom_caption {
+  color: var(--Textwhite-color);
+}
+
+.input_field {
+  background-color: var(--Input-color);
+  color: var(--Primary-color);
+  border: 1px solid transparent;
+  width: 100%;
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 500;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.Forgot {
+  color: var(--Action-color);
+}
+
+.eye_img {
+  position: absolute;
+  right: 8px;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+}
+
+
+
+/* input css */
+.search_input {
+  width: 26%;
+}
+
+input.search_input_field:focus {
+  border: 1px solid var(--Action-color);
+}
+
+textarea:focus {
+  border: 1px solid var(--Action-color);
+}
+
+.search_input2 {
+  width: 56%;
+}
+
+.search_input_field {
+  background-color: transparent;
+  color: var(--Primary-color);
+  font-size: clamp(10px, 1vw, 12px);
+  font-weight: 500;
+  border: 2px solid var(--Border-color);
+  padding: 6px;
+  height: 35px;
+  z-index: 99;
+}
+
+.search_img {
+  position: absolute;
+  right: 12px;
+  top: 9px;
+}
+
+/* MIDDLE CONTENT CSS START */
+
+.middle_content {
+  width: calc(100% - 242px);
+}
+
+.main_content {
+  height: calc(100vh - 58px);
+  overflow-y: scroll;
+}
+
+/* overflow scrollbar */
+.overflow_scroll {
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 0px 2px;
+}
+
+.overflow_hidden {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.single_page {
+  height: 100vh;
+}
+
+.main_content::-webkit-scrollbar {
+  display: none;
+}
+
+.chat_middle_section::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar_hide::-webkit-scrollbar {
+  display: none;
+}
+
+.offcanvas-body::-webkit-scrollbar {
+  display: none;
+}
+
+.login_content::-webkit-scrollbar {
+  display: none;
+}
+
+.chatbox_scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* MIDDLE CONTENT  */
+.card_heading {
+  color: var(--Primary-color);
+}
+
+.recive_email_icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.Received_Emails h2 {
+  color: var(--TextDark-color);
+}
+
+.user_name_icon {
+  height: 41px;
+  background-color: var(--Action-color);
+  opacity: 0.4;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Textwhite-color);
+  border-radius: 50%;
+}
+
+.grid_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
+  gap: 16px;
+}
+
+.candidate_text {
+  h2 {
+    color: var(--TextDark-color);
+  }
+}
+
+.avtar {
+  height: 40px;
+  width: 40px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/* pagination */
+.border_top {
+  border-top: 1px solid var(--Border-color);
+}
+
+.pagination img {
+  height: 36px;
+  width: 36px;
+}
+
+.pagination h2 {
+  color: var(--Primary-color);
+}
+
+/* PROFILE DROPDOWN */
+.profiles_dropdown {
+  inset: 16px 0px auto auto !important;
+  width: 400px;
+  padding: 20px !important;
+  border-radius: 8px;
+  background: var(--WhiteBackground-color) !important;
+  box-shadow: 4px 8px 32px 0px rgba(0, 0, 0, 0.24);
+  border: 1px solid transparent !important;
+}
+
+.dropdown-menu.show {
+  display: block;
+  background-color: var(--WhiteBackground-color);
+
+}
+
+.arrow_transform {
+  transform: rotate(90deg);
+}
+
+.profile_list li {
+  color: var(--TextDark-color);
+  cursor: pointer;
+}
+
+.dropdown a {
+  color: var(--TextDark-color);
+  cursor: pointer;
+}
+
+.dropdown-toggle {
+  color: var(--TextDark-color);
+}
+
+.profile_img {
+  height: 34px;
+  width: 34px;
+}
+
+.profile_dropdown img {
+  height: 50px;
+  width: 50px;
+}
+
+.profile_dropdown {
+  h2 {
+    color: var(--TextDark-color);
+  }
+
+  h3 {
+    color: var(--TextLight-color);
+  }
+}
+
+.calendar_dropdown {
+  background-color: var(--Primarylight-color);
+  border: 1px solid transparent;
+  color: var(--Primary-color);
+}
+
+.daily_status {
+  color: var(--TextDark-color);
+}
+
+.dropdown_toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 12px;
+  gap: 8px;
+  border: 1px solid var(--Textwhite-color);
+  font-weight: 500;
+  font-size: clamp(10px, 1vw, 12px);
+}
+
+/* CUSTOM TOGGLE BTN */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E7E7E7;
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 45px;
+  height: 25px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 6px;
+  bottom: 5px;
+  background-color: var(--Textwhite-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+  filter: drop-shadow(-2px 1px 6px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+input:checked+.slider {
+  background-color: var(--Action-color);
+  border: 1px solid transparent;
+}
+
+input:checked+.slider:before {
+  transform: translateX(18px);
+  bottom: 4px;
+}
+
+.slider.round {
+  border-radius: 6px;
+}
+
+.slider.round:before {
+  border-radius: 2px;
+}
+
+/* notification css */
+.notification_circle {
+  width: 12px;
+  height: 12px;
+  background-color: var(--Red-color);
+  border-radius: 50%;
+  font-size: clamp(6px, 1vw, 8px);
+  color: var(--Textwhite-color);
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+
+.offcanvas-header {
+  h5 {
+    color: var(--TextDark-color);
+  }
+
+  h6 {
+    color: var(--Action-color);
+    cursor: pointer;
+  }
+}
+
+.notification_card {
+  h5 {
+    color: var(--TextDark-color);
+  }
+
+  h6 {
+    color: var(--TextLight-color);
+  }
+}
+
+
+
+.nav-link:focus-visible {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+
+/* CHATBOX CSS HERE */
+.open-button {
+  padding: 12px 20px;
+  background-color: var(--Action-color);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.39);
+  border: none;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 78px;
+  height: 64px;
+}
+
+#close {
+  display: none;
+}
+
+.chatbox_scroll {
+  height: 333px;
+  overflow-y: scroll;
+}
+
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 103px;
+  right: 15px;
+  z-index: 9;
+  width: 600px;
+}
+
+.send_btn {
+  background-color: var(--Action-color);
+  color: var(--Textwhite-color);
+  border: 1px solid transparent;
+  position: absolute;
+  right: 16px;
+  bottom: 0px;
+}
+
+.form-container {
+  border-radius: 8px;
+  background-color: var(--WhiteBackground-color);
+  color: #777;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.39);
+  height: 100%;
+}
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .cancel {
+  background-color: #1974D2;
+}
+
+.input_text {
+  height: 43px;
+  color: var(--Primary-color);
+}
+
+.input_text input {
+  width: 90%;
+}
+
+.input_text::placeholder {
+  color: var(--TextDark-color);
+  opacity: 0.4;
+}
+
+.chatbox_header {
+  h3 {
+    color: var(--TextDark-color);
+  }
+
+  h4 {
+    color: var(--TextDark-color);
+    opacity: 0.6;
+  }
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  background-color: var(--Action-color);
+  border-radius: 50%;
+}
+
+.chatbox_message {
+  h3 {
+    color: var(--TextDark-color);
+  }
+
+  h4 {
+    color: var(--Textwhite-color);
+  }
+
+  h5 {
+    color: var(--TextLight-color);
+  }
+}
+
+/* message sender */
+.message_sender {
+  h3 {
+    color: var(--TextDark-color);
+  }
+
+  h4 {
+    color: var(--TextDark-color);
+  }
+
+  h5 {
+    color: var(--Textwhite-color);
+  }
+}
+
+.small_dropdown {
+  border: 1px solid transparent !important;
+  width: 200px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.24);
+}
+
+
+/* DASHBOARD CHATBOX POPUP  */
+
+.dashboard-chat-area {
+  border-radius: 0.6rem;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0px 4px 38px 0px rgba(0, 0, 0, 0.24);
+
+  .modal-content {
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    height: 100%;
+    box-shadow: none;
+  }
+
+  .modal-dialog-scrollable {
+    height: 100% !important;
+  }
+
+  .chatbox {
+    overflow: hidden;
+    height: 100%;
+    border-left: 1px solid var(--Border-color);
+
+  }
+
+  .send-box {
+    padding: 0px;
+    background-color: transparent;
+  }
+
+  .chatbox .modal-dialog,
+  .chatlist .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  a.add img {
+    height: 36px;
+  }
+
+  button:focus {
+    outline: 0;
+  }
+
+  .dashboard-chat-list a {
+    padding: 16px 24px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .dashboard-chat-list a:hover {
+    background-color: #F8F4F0;
+  }
+
+  .dashboard-chat-list a.active span {
+    display: none;
+  }
+
+  .chatlist {
+    width: 100%;
+  }
+
+  .chatbox {
+    width: 100%;
+    position: absolute;
+    left: 1000px;
+    right: 0;
+    background: #fff;
+    transition: all 0.5s ease;
+    border-left: none;
+  }
+
+  .showbox {
+    left: 0 !important;
+    transition: all 0.5s ease;
+    display: inline !important;
+    border-radius: 0.6rem;
+  }
+
+  .msg-head .flex-shrink-0 img {
+    height: 30px;
+  }
+
+  .dashboard-chat-area .col-md-4 {
+    width: 100%;
+  }
+
+  .chatbox {
+    display: none;
+  }
+
+  .chat-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .chat_search_icon {
+    position: absolute;
+    left: 22px;
+    top: 12px;
+  }
+
+}
+
+/*Agency Room chat */
+
+.chat_search_icon {
+  position: absolute;
+  left: 33px;
+  top: 28px;
+}
+
+.chat_user_search {
+  background: #F5F5F5;
+  border-radius: 22px;
+  border: 1px solid transparent;
+  font-size: clamp(12px, 1vw, 14px);
+
+}
+
+.chat_edit {
+  height: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Action-color);
+  border-radius: 50%;
+}
+
+
+.user_chat {
+  h3 {
+    color: var(--TextLight-color);
+    text-align: start;
+  }
+
+  h4 {
+    color: var(--TextDark-color);
+    text-align: start;
+  }
+}
+
+.user_chat_right {
+  h3 {
+    color: var(--TextLight-color);
+  }
+
+  span {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: var(--Action-color);
+    color: var(--Textwhite-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.chat_middle_section {
+  background-color: var(--chat-background);
+  padding: 24px 45px !important;
+
+}
+
+.border_right {
+  border-right: 1px solid var(--Border-color);
+}
+
+.Agency_Room_chats {
+  height: calc(100% - 167px);
+}
+
+.chat_middle_section {
+  overflow-y: auto;
+}
+
+
+
+.chat_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 0px 8px;
+  border-radius: 8px;
+}
+
+.chatting {
+  justify-content: end;
+  height: 100%;
+}
+
+.chat_box {
+  h3 {
+    color: var(--TextDark-color);
+  }
+}
+
+
+
+
+/* single leads page css */
+/* signle lead details */
+
+.single_tab button {
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 500;
+  color: var(--TextLight-color);
+}
+
+.single_tab h4 {
+  color: var(--Textwhite-color);
+}
+
+.single_tab button.active {
+  border-bottom: 1px solid var(--Action-color);
+  background-color: transparent;
+  border-width: 2px;
+  color: var(--Action-color) !important;
+  font-weight: 600;
+}
+
+.tabs_list_details {
+  li {
+    list-style: auto;
+    font-size: clamp(12px, 1vw, 14px);
+    font-weight: 500;
+    color: var(--TextLight-color);
+  }
+
+  h3 {
+    font-size: clamp(12px, 1vw, 14px);
+    font-weight: 500;
+    color: var(--TextDark-color);
+    margin: 0;
+  }
+
+  h2 {
+    color: var(--Primary-color);
+  }
+}
+
+.single_details {
+  h2 {
+    color: var(--Primary-color);
+  }
+
+  h3 {
+    color: var(--TextLight-color);
+  }
+
+  h4 {
+    color: var(--TextDark-color);
+  }
+}
+
+
+
+.document_card {
+  h3 {
+    color: var(--TextDark-color);
+  }
+
+  h4 {
+    color: var(--TextLight-color);
+  }
+}
+
+.document_pdf_icon {
+  height: 34px;
+  width: 34px;
+}
+
+.note_discription {
+  border: 1px solid var(--Border-color);
+}
+
+.send_btn2 {
+  background-color: var(--Action-color);
+  color: var(--Textwhite-color);
+  border: 1px solid transparent;
+}
+
+.user_name {
+  padding: 4px 8px;
+  border-radius: 20px;
+  background-color: #0831601a;
+  color: #083160;
+}
+
+.note_details {
+  h3 {
+    color: var(--TextLight-color);
+  }
+
+  h4 {
+    color: var(--TextDark-color);
+  }
+}
+
+.action_light_btn {
+  background-color: var(--Action-color);
+  color: var(--Textwhite-color);
+  border: 1px solid transparent;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.action_light_secondary_btn {
+  background-color: var(--Primarylight-color);
+  color: var(--Action-color);
+  border: 1px solid transparent;
+  padding: 8px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.task_details {
+  h2 {
+    color: var(--TextDark-color);
+  }
+
+  h3 {
+    color: var(--TextLight-color);
+  }
+}
+
+.task_details_card {
+  border: 1px solid var(--Border-color);
+  padding: 8px;
+}
+
+/* upload file */
+.file_select_box {
+  border-radius: 6px;
+  border: 1px dashed var(--Action-color);
+  height: 113px;
+  padding: 12px;
+}
+
+.file_select {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: relative;
+}
+
+.file_select_box input:not(:placeholder-shown)+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 29%;
+  left: 12%;
+  font-size: 17px;
+  font-weight: 500;
+  z-index: 9;
+}
+
+.file_select_box h4 {
+  color: var(--Action-color);
+}
+
+/* job form */
+.job_form_details {
+  li {
+    color: var(--TextDark-color);
+    list-style: auto;
+  }
+
+  span {
+    color: var(--TextDark-color);
+  }
+
+  h3 {
+    color: var(--TextLight-color);
+    margin: 0;
+  }
+}
+
+/* task & CALENDAR */
+.lead_tab button {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.selectSection button.active {
+  background-color: var(--Action-color);
+  color: var(--Textwhite-color);
+
+  img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(95%) saturate(1%) hue-rotate(17deg) brightness(103%) contrast(100%);
+  }
+}
+
+/* coman css */
+/* add task modal */
+.add_task {
+  h3 {
+    color: var(--TextDark-color);
+    font-size: clamp(12px, 1vw, 16px);
+    font-weight: 500;
+    width: 20%;
+  }
+
+  .googlemeet {
+    width: 20%;
+  }
+
+  input,
+  select,
+  .check_box_field,
+  .google_meet_clipboard {
+    width: 84%;
+  }
+
+  .check_box_field {
+    .modal_checkbox {
+      width: 35px;
+    }
+  }
+
+  textarea {
+    width: 84%;
+    resize: none;
+    height: 115px;
+  }
+
+  h1 {
+    color: var(--TextDark-color);
+
+  }
+}
+
+/* Create a custom checkbox */
+.checkmarks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: var(--WhiteBackground-color);
+  border: 1px solid var(--Border-color);
+}
+
+.modal_checkbox input {
+  height: 35px;
+  width: 35px;
+}
+
+/* On mouse-over, add a grey background color */
+.modal_checkbox:hover input~.checkmarks {
+  background-color: var(--Textwhite-color);
+}
+
+/* When the checkbox is checked, add a blue background */
+.modal_checkbox input:checked~.checkmarks {
+  background-color: var(--Action-color);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarks:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.modal_checkbox input:checked~.checkmarks:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.modal_checkbox .checkmarks:after {
+  left: 13px;
+  top: 10px;
+  width: 7px;
+  height: 12px;
+  border: solid var(--Textwhite-color);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(42deg);
+}
+
+.hidetab,
+.secondtabs {
+  display: none;
+}
+
+.dropdown-item:active {
+  background-color: var(--Action-color) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY ALL PAGES  */
+
+
+/* chatbox */
+@media (max-width: 992px) {
+  .chat-icon {
+    display: block;
+    margin-right: 5px;
+  }
+
+  .chatlist {
+    width: 100%;
+  }
+
+  .chatbox {
+    width: 100%;
+    position: absolute;
+    left: 1000px;
+    right: 0;
+    background: #fff;
+    transition: all 0.5s ease;
+    border-left: none;
+  }
+
+  .showbox {
+    left: 0 !important;
+    transition: all 0.5s ease;
+  }
+
+  .msg-head .flex-shrink-0 img {
+    height: 30px;
+  }
+
+  .chat-area .col-md-4 {
+    width: 100%;
+  }
+
+  .chat-area .col-md-8 {
+    width: 100%;
+  }
+
+  .task_calendar_header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+
+
+@media (max-width: 1250px) {
+  .table_actions {
+    .col-md-5 {
+      flex: 0 0 auto;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+    .col-md-7 {
+      flex: 0 0 auto;
+      width: 100%;
+      justify-content: flex-start !important;
+    }
+  }
+}
+
+@media (min-width:575px) and (max-width: 1200px) {
+
+  .email_Functionality {
+    .col-md-4 {
+      flex: 0 0 auto;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .col-md-8 {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width:992px) {
+
+  .dashboard_card .col-md-6 {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+
+  .search_input {
+    width: 50%;
+  }
+
+  .search_input2 {
+    width: 48%;
+  }
+
+  td {
+    line-height: 16px;
+  }
+
+  .calendar_task {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 12px;
+  }
+}
+
+
+@media (max-width:768px) {
+  .table_actions {
+    .col-md-7 {
+      flex: 0 0 auto;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  .lead_details {
+    flex-wrap: wrap;
+  }
+
+  .search_input {
+    width: 50%;
+  }
+
+  .calendar_details {
+    flex-wrap: wrap;
+    justify-content: start !important;
+  }
+
+  .chat-popup {
+    width: 450px;
+  }
+
+}

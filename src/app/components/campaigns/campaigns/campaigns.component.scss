@@ -1,0 +1,137 @@
+/* Campaigns css */
+.Campaigns_details_cards {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+  }
+  .Campaigns_grid_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(307px, 1fr));
+    gap: 24px;
+  }
+  
+  .Campaigns_cards {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+  }
+  
+  .Campaigns_btn_status {
+    padding: 8px;
+    border-radius: 24px;
+  
+    h4 {
+      color: var(--Red-color);
+    }
+  
+    h5 {
+      color: var(--Success-color);
+    }
+  }
+  
+  .Campaigns {
+    h3 {
+      color: var(--TextLight-color);
+  
+    }
+  
+    h4 {
+      color: var(--TextDark-color);
+    }
+  }
+  
+  .Campaigns_cards {
+    h2 {
+      color: var(--TextDark-color);
+    }
+  }
+  
+  .Campaigns__status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  
+  .active_status {
+    span {
+      background-color: var(--Success-color);
+    }
+  
+    h4 {
+      color: var(--Success-color);
+    }
+  }
+  
+  .inactive_status {
+    span {
+      background-color: var(--SlateGray-color);
+    }
+  
+    h4 {
+      color: var(--SlateGray-color);
+    }
+  }
+  
+  .pending_status {
+    span {
+      background-color: var(--DarkBlue-color);
+    }
+  
+    h4 {
+      color: var(--DarkBlue-color);
+    }
+  }
+  
+  .inprogress_status {
+    span {
+      background-color: var(--Yellow-color);
+    }
+  
+    h4 {
+      color: var(--Yellow-color);
+    }
+  }
+  
+  .heading_border_bottom {
+    border-bottom: 2px solid var(--Primary-color);
+    padding-bottom: 4px;
+  }
+  
+  .border_bottom {
+    border-bottom: 1px solid var(--Border-color);
+  }
+  
+  .user_details_top h4 {
+    color: var(--TextDark-color);
+    line-height: 40px;
+  }
+  
+  /* progress bar  */
+  .progress,
+  .progress-stacked {
+    --bs-progress-height: 5px !important;
+  }
+  
+  .progress-bar {
+    border-radius: 13px;
+  }
+  
+  .progress-stacked {
+    .blue {
+      background-color: var(--DarkBlue-color);
+    }
+  
+    .red {
+      background-color: var(--Red-color);
+    }
+  
+    .green {
+      background-color: var(--Success-color);
+    }
+  
+    .yellow {
+      background-color: var(--Yellow-color);
+    }
+  }
+  
+  .blue {
+    color: var(--Primary-color);
+  }

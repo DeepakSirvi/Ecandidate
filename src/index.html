@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>CUSTOMERPORTAL</title>
+  <meta charset="UTF-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CUSTOME CSS  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- BOOTSTRAP CSS  -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- FONT CSS  -->
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+<body>
+
+  <app-root></app-root>
+  <!-- SCRIPTS LINKS -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/darktheme.js"></script>
+
+
+  <!-- CHATBOX SCRIPT -->
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+      document.getElementById("open").style.display = "none";
+      document.getElementById("close").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+      document.getElementById("close").style.display = "none";
+      document.getElementById("open").style.display = "block";
+
+    }
+  </script>
+
+  <!-- chat box script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    jQuery(document).ready(function () {
+      $(".user-chat").click(function () {
+        $(".user-chat").removeClass("active");
+        $(this).addClass("active");
+        $(".chatbox").addClass("showbox");
+        return false;
+      });
+
+      $(".chat-icon").click(function () {
+        $(".chatbox").removeClass("showbox");
+      });
+    });
+  </script>
+
+  <!-- tooltip -->
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
+  <!--  google meet clipboard script -->
+  <script>
+    function showLoading() {
+      const button = document.getElementById('meet-button');
+      const spinner = document.getElementById('loading-spinner');
+      const afterLoading = document.getElementById('after-loading');
+
+      // Show the loading spinner
+      spinner.style.display = 'block';
+
+      // Disable the button to prevent multiple clicks
+      button.disabled = true;
+      button.style.opacity = 0.7;
+
+      // Simulate a loading time of 3 seconds (3000 milliseconds)
+      setTimeout(() => {
+        // Hide the loading spinner
+        spinner.style.display = 'none';
+
+        // Enable the button
+        button.disabled = false;
+        button.style.opacity = 1;
+
+        // Show the after-loading options
+        afterLoading.style.display = 'flex';
+      }, 3000);
+    }
+
+    function copyLink() {
+      const link = 'https://meet.google.com/new'; // Example link
+      navigator.clipboard.writeText(link).then(() => {
+        alert('Link copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    }
+    function closeActions() {
+      const afterLoading = document.getElementById('after-loading');
+      afterLoading.style.display = 'none';
+    }
+
+  </script>
+
+
+  <script>
+    function allowDrop(event) {
+      event.preventDefault();
+    }
+
+    function drag(event) {
+      event.dataTransfer.setData("text", event.target.id);
+    }
+
+    function drop(event, targetCardId) {
+      event.preventDefault();
+      const data = event.dataTransfer.getData("text");
+      const draggedElement = document.getElementById(data);
+      const targetUserDetails = document.getElementById(targetCardId);
+
+      if (targetUserDetails && draggedElement) {
+        // Append the dragged element to the target user details section
+        targetUserDetails.appendChild(draggedElement);
+      }
+
+    }
+
+  </script>
+
+
+</body>
+</head>
+</html>

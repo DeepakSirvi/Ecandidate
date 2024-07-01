@@ -1,0 +1,27 @@
+<!-- login component -->
+<div class="login_background">
+    <div class="d-flex flex-column scrollbar_hide login_content">
+        <img src="assets/images/svg-img/login-left-arrow.svg" width="30" height="50">
+        <div class="login_text">
+            <h1 class="Semibold mb-3 Heading">Login to your account</h1>
+            <h2 class="light mb-0 Sub-Heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore</h2>
+        </div>
+        <div>
+            <!-- input gmail -->
+            <app-input-text-field type="text" placeholder="E-mail" className="mb-3"></app-input-text-field>
+            <!-- input password -->
+            <div class="position-relative">
+                <app-input-text-field type="password" placeholder="Password" className="mb-3"></app-input-text-field>
+                <img src="assets/images/svg-img/eye.svg" class="eye_img">
+            </div>
+            <a routerLink="{{apiRoutes.FORGOTPASSWORD}}" class="Forgot mb-0 float-end small-text Medium">Forgot Password</a>
+        </div>
+        <!-- button -->
+        <div>
+            <a  routerLink="{{apiRoutes.HOME}}"><app-action-button  title="Sign In"></app-action-button></a>
+            <h4 class="login_bottom_caption small-text Regular mt-2">Don't have an account? <span
+                    class="action_color">Sign up</span></h4>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,148 @@
+<!-- single lead details contact components -->
+
+<div class=" white_card_background p-4 h-100 d-flex flex-column gap-4">
+    <!-- tabs list name -->
+    <div class="d-flex  single_tab py-3">
+        <ul class="nav d-flex gap-3 " id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active p-1" id="pills-Contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-Contact" type="button" role="tab" aria-controls="pills-Contact"
+                    aria-selected="true">Contact Detail</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link p-1" id="pills-Task-tab" data-bs-toggle="pill" data-bs-target="#pills-Task"
+                    type="button" role="tab" aria-controls="pills-Task" aria-selected="false">Task</button>
+            </li>
+        </ul>
+    </div>
+    <!-- tabs content -->
+    <div class="tab-content" id="pills-tabContent">
+        <!-- Contact tabs -->
+        <div class="tab-pane fade show active" id="pills-Contact" role="tabpanel"
+            aria-labelledby="pills-Contact-tab" tabindex="0">
+
+            <div class=" mb-4 d-flex gap-5 single_details">
+                <div class="">
+                    <h3 class="small-text Medium mb-2">E-Mail </h3>
+                    <h4 class="small-text  Medium mb-0">abcd123gmail.com</h4>
+                </div>
+                <div class="">
+                    <h3 class="small-text  Medium mb-2 ">Contact No. </h3>
+                    <h4 class="small-text  Medium mb-0">9874563210</h4>
+
+                </div>
+            </div>
+            <div class="single_details mb-3">
+                <h2 class="mb-2 small-text Medium">Description</h2>
+                <!-- editor add -->
+                <div id="editor" class="ckeditor"></div>
+            </div>
+
+            <div class="">
+                <h2 class=" small-text Medium mb-2">Note</h2>
+                <div class=" p-3 note_discription d-flex flex-column gap-4">
+                    <div class="note_discription  px-3 py-2 d-flex justify-content-between align-items-center">
+                        <input type="text" class="w-75 small-text Medium border-0"
+                            placeholder="Add note">
+                        <button type="submit" class="send_btn2 medium-text  Medium py-1  p-3 position-relative ">Send</button>
+                    </div>
+                    <!-- Contact note Detail  -->
+                    <div class="d-flex flex-column gap-2">
+                        <div class="secondary_card_background note_details d-flex flex-column gap-2 p-2 ">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="circle blue-filter" style="height: 8px;width: 8px;"></span>
+                                <div class=" user_name">
+                                    <h4 class="Caption Medium mb-0 ">Shivani gupta</h4>
+
+                                </div>
+                                <h3 class="x-small-text Medium mb-0">20.05.2024</h3>
+                                <img src="assets/images/svg-img/delete.svg" class="mx-0 ms-auto Rejection">
+                            </div>
+                            <h4 class="small-text Medium mb-0">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit, sed do eiusmod te</h4>
+                        </div>
+                        <div class="secondary_card_background note_details d-flex flex-column gap-2 p-2 ">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="circle blue-filter" style="height: 8px;width: 8px;"></span>
+                                <div class=" user_name">
+                                    <h4 class="Caption Medium mb-0 ">Shivani gupta</h4>
+
+                                </div>
+                                <h3 class="x-small-text Medium mb-0">20.05.2024</h3>
+                                <img src="assets/images/svg-img/delete.svg" class="mx-0 ms-auto Rejection">
+                            </div>
+                            <h4 class="small-text Medium mb-0">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit, sed do eiusmod te</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Task tabs-->
+        <div class="tab-pane fade" id="pills-Task" role="tabpanel" aria-labelledby="pills-Task-tab" tabindex="0">
+            <div class="d-flex flex-column gap-4">
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex justify-content-between align-items-center task_calendar_header">
+                        <div class="d-flex gap-3 align-items-center">
+                            <h2 class="card_heading Sub-Heading Medium mb-0">March</h2>
+                            <div class="action_light_secondary_btn small-text Medium py-1">
+                                + Add Task
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <select class="calendar_dropdown px-2 py-1 medium-text Medium">
+                                <option value="-1">Week</option>
+                                <option value="-2">Month</option>
+                                <option value="1">Day</option>
+                            </select>
+                            <div class="d-flex align-items-center gap-1">
+                                <a href="#"><img src="assets/images/svg-img/left-arrow.svg"></a>
+                                <h2 class="small-text Medium mb-0 daily_status">Today</h2>
+                                <a href="#"><img src="assets/images/svg-img/arrow.svg"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- CALENDAR img-->
+                    <img src="assets/images/png-img/task.png" class="w-100">
+
+
+                </div>
+                <div class="d-flex">
+                    <h2 class="card_heading Sub-Heading Medium heading_border_bottom mb-0">Task
+                        Detail
+                    </h2>
+                </div>
+                <div class="d-flex flex-column gap-4">
+                    <div class="task_details_card d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <h2 class="card_heading mb-0 Caption Medium">Title - Figma UI Design
+                            </h2>
+                            <div class="action_light_secondary_btn smaller-text  Medium py-1">
+                                Task completed
+                            </div>
+                            <div class="task_details mx-0 ms-auto">
+                                <h3 class="mb-0 Medium Caption">15-06-24
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="task_details">
+                            <h2 class="mb-2 Medium Caption">Description</h2>
+                            <h3 class="mb-0 Medium Caption">Lorem ipsum dolor sit amet consectetur.
+                                Sit nisl
+                                purus
+                                eget elit. Sit volutpat ullamcorper leo faucibus adipiscing lorem ut
+                                nec
+                                tortor.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
